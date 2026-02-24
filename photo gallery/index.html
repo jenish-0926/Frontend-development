@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color:rgb(84, 104, 87);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(129, 184, 107, 0.801);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: rgb(27, 45, 19);">MOANA </h2>
+    <div class="gallery">
+        <img src="C:\Users\jenisha\Downloads\moana5.jpg">
+        <img src="C:\Users\jenisha\Downloads\moana4.jpg">
+        <img src="C:\Users\jenisha\Downloads\mona3.jpg" >
+        <img src="C:\Users\jenisha\Downloads\moana8.jpg" >
+        <img src="C:\Users\jenisha\Downloads\moana7.jpg" >
+        <img src="C:\Users\jenisha\Downloads\monawall.jpg">
+        <img src="C:\Users\jenisha\Downloads\moana10.jpg" >
+        <img src= "C:\Users\jenisha\Downloads\monna2.jpg" >
+        <img src="C:\Users\jenisha\Downloads\moana11.jpg" >
+        <img src= "C:\Users\jenisha\Downloads\moana12.jpg">    
+    </div>
+</body>
+</html>
