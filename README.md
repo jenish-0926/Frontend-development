@@ -42,5 +42,8 @@ ppt link - https://www.canva.com/design/DAHBdQHFNSU/5-J575vfeNthArh0W_VoQQ/edit?
  A college notice board is used to display important announcements and updates for students. It helps students stay informed about exams, events, and academic activities.
 
 
+                                6.login page
+Demo link - https://jenish-0926.github.io/Frontend-development/login%20page/                                
+                                
 
                                    
