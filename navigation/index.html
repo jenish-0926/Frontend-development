@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; 
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: rgb(155, 152, 144);
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 150px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #666;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        section {
+            display: none;   
+            padding: 100px;
+            text-align: center;
+            height: 100vh;
+        }
+
+        #home {
+            background-color: rgb(106, 132, 173);
+            color: white;
+            display: block;  
+        }
+
+        #about {
+            background-color: rgb(188, 215, 193);
+            color: rgb(0, 0, 0);
+        }
+
+        #contact {
+            background-color: rgb(133, 107, 136);
+            color: black;
+        }
+
+        #course {
+            background-color: rgb(101, 85, 85);
+            color: white;
+        }
+    </style>
+
+    <script>
+        function showSection(id) {
+            document.getElementById("home").style.display = "none";
+            document.getElementById("about").style.display = "none";
+            document.getElementById("contact").style.display = "none";
+            document.getElementById("course").style.display = "none";
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+
+</head>
+<body>
+
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">About</a>
+
+        <div class="dropdown">
+            <a>Course</a>
+            <div class="dropdown-content">
+                <a onclick="showSection('course')">COURSE</a>
+                <a onclick="showSection('home')">home</a>
+                <a onclick="showSection('about')">about</a>
+            </div>
+        </div>
+
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Our Website</h1>
+        <p>This is the Home page section.</p>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Jenisha, BCA student in Kamaraj College</p>
+    </section>
+
+    <section id="course">
+        <h1>Our Courses</h1>
+        <p>We offer BCA, Web Development and Java Programming courses.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Email: jenish0926@email.com</p>
+        <p>Phone: +91 9486156843</p>
+    </section>
+
+</body>
+</html>
