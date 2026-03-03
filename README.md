@@ -43,7 +43,16 @@ ppt link - https://www.canva.com/design/DAHBdQHFNSU/5-J575vfeNthArh0W_VoQQ/edit?
 
 
                                 6.login page
-Demo link - https://jenish-0926.github.io/Frontend-development/login%20page/                                
+Demo link - https://jenish-0926.github.io/Frontend-development/login%20page/     
+
+ppt link -  https://www.canva.com/design/DAHCYxTaOdI/UjeJnuAsDpTphtTG8JqRKw/edit?utm_content=DAHCYxTaOdI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+A login page is a web page where users enter their username and password to access a secure website or application. It helps protect user data by allowing only authorized users to log in.
+
+
+                              7.Navigation 
+
+                              
                                 
 
                                    
