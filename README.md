@@ -51,7 +51,11 @@ A login page is a web page where users enter their username and password to acce
 
 
                               7.Navigation 
+Demo Link - https://jenish-0926.github.io/Frontend-development/navigation/
 
+ppt link - https://www.canva.com/design/DAHCxUwnKwM/1lufpowXoqSUVif0Iz9-2g/edit?utm_content=DAHCxUwnKwM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+A navigation page helps users move between different sections of a website using links or a menu bar. It makes the website organized and easy to use by providing clear directions to other pages.
                               
                                 
 
