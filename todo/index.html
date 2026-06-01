@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To Do List</title>
+
+<style>
+
+body{
+    background:#f2f2f2;
+    text-align:center;
+}
+
+/* box */
+.container{
+    width:400px;
+    margin:80px auto;
+    background:rgb(210, 207, 203);
+    padding:20px;
+    border-radius:10px;
+}
+
+/* list */
+ul{
+    text-align:left;
+    margin-top:20px;
+}
+
+li{
+    padding:5px;
+}
+
+</style>
+
+<script>
+
+function addTask()
+{
+    var input = document.getElementById("task");
+
+    if(input.value=="") return;
+
+    var li = document.createElement("li");
+
+    li.innerHTML = input.value;
+
+    document.getElementById("list").appendChild(li);
+
+    input.value="";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>To Do List</h2>
+
+<input type="text" id="task" placeholder="Enter a list">
+<button onclick="addTask()">Add</button>
+
+<ul id="list"></ul>
+
+</div>
+
+</body>
+</html>
+
