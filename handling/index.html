@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Handling</title>
+  <style>
+    body {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+  <h2 id="text">Hello! Click the button 👇</h2>
+  <button onclick="changeText()">Click Me</button>
+
+  <script>
+    function changeText() {
+  document.getElementById("text").innerHTML =
+    "You clicked the button 🎉";
+}
+
+  </script>
+</body>
+</html>
