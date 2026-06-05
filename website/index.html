@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Theater Ticket Booking</title>
+  <style>
+    body {
+  font-family: Arial;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.movie-container {
+  margin: 20px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.screen {
+  background: white;
+  color: black;
+  padding: 10px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(6, 40px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat.selected {
+  background: limegreen;
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 18px;
+}
+  </style>
+</head>
+<body>
+
+  <h1>🎬 Theater Ticket Booking</h1>
+
+  <div class="movie-container">
+    <label>Select Movie: </label>
+    <select id="movie">
+      <option value="120">Avengers - ₹120</option>
+      <option value="150">Jailer - ₹150</option>
+      <option value="100">Comali - ₹100</option>
+    </select>
+  </div>
+
+  <div class="container">
+
+    <div class="screen">SCREEN</div>
+
+    <div class="seats">
+      <!-- 30 seats -->
+      <div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+      <div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+      <div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+      <div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+      <div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+    </div>
+
+  </div>
+
+  <p class="text">
+    Selected Seats: <span id="count">0</span> | Total: ₹<span id="total">0</span>
+  </p>
+
+  <script>
+    const seats = document.querySelectorAll(".seat");
+const movie = document.getElementById("movie");
+const count = document.getElementById("count");
+const total = document.getElementById("total");
+
+let ticketPrice = +movie.value;
+function update() {
+  const selectedSeats = document.querySelectorAll(".seat.selected");
+  const selectedCount = selectedSeats.length;
+
+  count.innerText = selectedCount;
+  total.innerText = selectedCount * ticketPrice;
+}
+
+// seat click
+seats.forEach(seat => {
+  seat.addEventListener("click", () => {
+    seat.classList.toggle("selected");
+    update();
+  });
+});
+
+// movie change
+movie.addEventListener("change", e => {
+  ticketPrice = +e.target.value;
+  update();
+});
+  </script>
+</body>
+</html>
