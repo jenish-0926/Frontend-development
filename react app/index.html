@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>React State Example</title>
+
+<!-- React CDN -->
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<style>
+body{
+    font-family: Arial;
+    text-align:center;
+    margin-top:50px;
+}
+
+.box{
+    background:#f2f2f2;
+    padding:20px;
+    width:300px;
+    margin:auto;
+    border-radius:10px;
+}
+
+button{
+    padding:10px 15px;
+    margin:10px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel">
+
+// Component with state
+function Counter(){
+
+    const [count, setCount] = React.useState(0);
+
+    return(
+        <div className="box">
+            <h2>Simple Counter App</h2>
+            <h1>{count}</h1>
+
+            <button onClick={() => setCount(count + 1)}>
+                Increase
+            </button>
+
+            <button onClick={() => setCount(count - 1)}>
+                Decrease
+            </button>
+
+            <button onClick={() => setCount(0)}>
+                Reset
+            </button>
+        </div>
+    );
+}
+
+// Main App component
+function App(){
+    return(
+        <div>
+            <Counter />
+        </div>
+    );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
+</script>
+
+</body>
+</html>
