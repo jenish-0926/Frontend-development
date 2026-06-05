@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Responsive Website</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+}
+header{
+    background:#4CAF50;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+nav{
+    background:#333;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background:#555;
+}
+.container{
+    display:flex;
+    padding:20px;
+    gap:20px;
+}
+
+.box{
+    flex:1;
+    background:#f2f2f2;
+    padding:20px;
+    border-radius:10px;
+}
+@media (max-width:600px){
+    .container{
+        flex-direction:column;
+    }
+
+    nav{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>My Simple Website</h2>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="box">
+<h3>Box 1</h3>
+<p>This is a simple responsive layout.</p>
+</div>
+
+<div class="box">
+<h3>Box 2</h3>
+<p>It adjusts automatically for mobile screens.</p>
+</div>
+
+<div class="box">
+<h3>Box 3</h3>
+<p>Flexbox makes it easy and clean.</p>
+</div>
+
+</div>
+
+</body>
+</html>
