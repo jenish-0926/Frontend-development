@@ -95,10 +95,64 @@ A digital clock program is a simple program that displays the current time (hour
 
 
                                12.calculator
-Demo link - 
+Demo link -  https://jenish-0926.github.io/Frontend-development/calculator/
 
-ppt link -
+ppt link - https://canva.link/ugc9q8qc9dlbzaz
 
+A calculator program is a simple application that performs basic mathematical operations like addition, subtraction, multiplication, and division.
+It is commonly created using HTML, CSS, and JavaScript for web-based interfaces or other programming languages.
+
+                           13. website
+
+Demo link -  https://jenish-0926.github.io/Frontend-development/website/
+
+ppt link - https://canva.link/ws50bffcefmzv82
+
+ A simple website program is created using HTML to structure content, CSS to style it, and JavaScript to add interactivity.
+
+                              14. Events
+
+Demo link - https://jenish-0926.github.io/Frontend-development/handling/
+
+ppt link - https://canva.link/lt4bd8sun2dpjml
+
+An event handling program in web development uses JavaScript to respond to user actions like clicks, keypresses, or mouse movements.
+It connects HTML elements with functions so the webpage becomes interactive and dynamic.
+
+                          15. image slider
+                          
+Demo link - https://jenish-0926.github.io/Frontend-development/image/
+
+ppt link - https://canva.link/fi3k3nchy9nkmjd
+
+An event image slider is a web component that automatically or manually displays multiple event-related images in a slideshow format.
+It helps showcase highlights of events like festivals, conferences, or celebrations in a visually engaging way on a website.
+
+                         16. Responsive website 
+
+Demo link - https://jenish-0926.github.io/Frontend-development/responsive/
+
+ppt link - https://canva.link/q0rc4t3duxe47hd
+
+A responsive website slider is a web component that displays images or content in a rotating slideshow that adapts to different screen sizes.
+It is commonly built using HTML, CSS, and JavaScript to create smooth transitions and improve user experience on mobile and desktop devices.
+
+                        17. Bootstrap components
+
+Demo link - https://jenish-0926.github.io/Frontend-development/bootstrap/
+
+ppt link - https://canva.link/8lx1uodzrrqmrqc
+
+The Bootstrap Carousel is a responsive component used to create sliding image or content galleries on a webpage. It automatically cycles through items or allows users to navigate using controls and indicators.
+
+                          18. Icon using font awesome
+
+ Demo link - https://jenish-0926.github.io/Frontend-development/font/
+
+ ppt link - https://canva.link/vj9hle26qfgq34h
+
+ Font Awesome provides a rich set of scalable vector icons that can be easily used in websites for buttons, navigation, and UI elements without losing quality.
+It can also be integrated into image sliders to add next/previous icons and improve user interaction in a clean and responsive way.
 
                                
 
